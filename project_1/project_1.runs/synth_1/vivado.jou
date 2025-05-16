@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon May  5 20:36:22 2025
+# Process ID         : 29304
+# Current directory  : C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.runs/synth_1
+# Command line       : vivado.exe -log datapath_impl.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source datapath_impl.tcl
+# Log file           : C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.runs/synth_1/datapath_impl.vds
+# Journal file       : C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.runs/synth_1\vivado.jou
+# Running On         : NewBtch
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 9 8945HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3992 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16422 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 30380 MB
+# Available Virtual  : 5750 MB
+#-----------------------------------------------------------
+source datapath_impl.tcl -notrace

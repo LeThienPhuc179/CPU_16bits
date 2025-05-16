@@ -1,0 +1,326 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon May  5 20:36:22 2025
+# Process ID         : 29304
+# Current directory  : C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.runs/synth_1
+# Command line       : vivado.exe -log datapath_impl.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source datapath_impl.tcl
+# Log file           : C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.runs/synth_1/datapath_impl.vds
+# Journal file       : C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.runs/synth_1\vivado.jou
+# Running On         : NewBtch
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 9 8945HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3992 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16422 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 30380 MB
+# Available Virtual  : 5750 MB
+#-----------------------------------------------------------
+source datapath_impl.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/utils_1/imports/synth_1/datapath.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/utils_1/imports/synth_1/datapath.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top datapath_impl -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12116
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 996.848 ; gain = 468.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'datapath_impl' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/data_path_imple.v:23]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/program_counter.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/program_counter.v:24]
+INFO: [Synth 8-6157] synthesizing module 'PC_Update_Unit' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/PC_Update_Unit.v:23]
+WARNING: [Synth 8-567] referenced signal 'offset' should be on the sensitivity list [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/PC_Update_Unit.v:44]
+INFO: [Synth 8-6157] synthesizing module 'adder2' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/adder2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder2' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/adder2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'offset_adder' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/offset_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'offset_adder' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/offset_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BranchControl' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/BranchControl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'BranchControl' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/BranchControl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux16bit' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux16bit' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC_Update_Unit' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/PC_Update_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/instruction_memory.v:3]
+INFO: [Synth 8-3876] $readmem data file 'instruction_mem.mem' is read successfully [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/instruction_memory.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/instruction_memory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/Control_Unit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/Control_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4bit' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/mux4bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4bit' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/mux4bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/register_file.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/register_file.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ALUcontrol' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/ALUcontrol.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALUcontrol' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/ALUcontrol.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/alu.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'data_memory.mem' is read successfully [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/data_mem.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sign_extension' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/sign_externsion.v:23]
+WARNING: [Synth 8-6090] variable 'out' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/sign_externsion.v:31]
+WARNING: [Synth 8-6090] variable 'out' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/sign_externsion.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'sign_extension' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/sign_externsion.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'datapath_impl' (0#1) [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/data_path_imple.v:23]
+WARNING: [Synth 8-4767] Trying to implement RAM 'dataMem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "dataMem_reg" dissolved into registers
+WARNING: [Synth 8-7129] Port instruction[11] in module Control_Unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[10] in module Control_Unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[9] in module Control_Unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[8] in module Control_Unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[7] in module Control_Unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[6] in module Control_Unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[5] in module Control_Unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[4] in module Control_Unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port offset[15] in module PC_Update_Unit is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1239.453 ; gain = 711.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1239.453 ; gain = 711.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1239.453 ; gain = 711.109
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.182 . Memory (MB): peak = 1239.453 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/constrs_1/new/constr_file.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/constrs_1/new/constr_file.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/constrs_1/new/constr_file.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/constrs_1/new/constr_file.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/constrs_1/new/constr_file.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/datapath_impl_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/datapath_impl_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1328.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1328.430 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1328.430 ; gain = 800.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1328.430 ; gain = 800.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1328.430 ; gain = 800.086
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'signal_reg' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/mux.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'S_reg' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/mux4bit.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/alu.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'rData_reg' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/data_mem.v:38]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.srcs/sources_1/new/sign_externsion.v:29]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1328.430 ; gain = 800.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 2     
+	   3 Input   16 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 17    
+	                8 Bit    Registers := 1024  
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 36    
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1576  
+	   3 Input    1 Bit        Muxes := 496   
+	   8 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 1653.695 ; gain = 1125.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------------+--------------------+---------------+----------------+
+|Module Name        | RTL Object         | Depth x Width | Implemented As | 
++-------------------+--------------------+---------------+----------------+
+|instruction_memory | instruction_memory | 256x8         | LUT            | 
+|instruction_memory | instruction_memory | 256x8         | LUT            | 
+|instruction_memory | p_0_out            | 256x8         | LUT            | 
+|instruction_memory | p_0_out            | 256x8         | LUT            | 
++-------------------+--------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:32 . Memory (MB): peak = 1653.695 ; gain = 1125.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:32 . Memory (MB): peak = 1653.695 ; gain = 1125.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1653.695 ; gain = 1125.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 1653.695 ; gain = 1125.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 1653.695 ; gain = 1125.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 1653.695 ; gain = 1125.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:01:46 . Memory (MB): peak = 1653.695 ; gain = 1125.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:42 ; elapsed = 00:01:49 . Memory (MB): peak = 1653.695 ; gain = 1125.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:42 ; elapsed = 00:01:49 . Memory (MB): peak = 1653.695 ; gain = 1125.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    14|
+|3     |LUT1   |    23|
+|4     |LUT2   |   203|
+|5     |LUT3   |  5142|
+|6     |LUT4   |   936|
+|7     |LUT5   |  1547|
+|8     |LUT6   |  7169|
+|9     |MUXF7  |  2208|
+|10    |MUXF8  |  1102|
+|11    |FDRE   |  8455|
+|12    |LD     |    16|
+|13    |IBUF   |     2|
+|14    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:42 ; elapsed = 00:01:49 . Memory (MB): peak = 1653.695 ; gain = 1125.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:30 ; elapsed = 00:01:46 . Memory (MB): peak = 1653.695 ; gain = 1036.375
+Synthesis Optimization Complete : Time (s): cpu = 00:01:42 ; elapsed = 00:01:50 . Memory (MB): peak = 1653.695 ; gain = 1125.352
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.369 . Memory (MB): peak = 1653.695 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3340 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1653.695 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LD => LDCE: 16 instances
+
+Synth Design complete | Checksum: 6fb7d855
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 20 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:50 ; elapsed = 00:02:10 . Memory (MB): peak = 1653.695 ; gain = 1318.070
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1653.695 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/CSE490/16bitProcessor/cse490/cse490/project_1/project_1.runs/synth_1/datapath_impl.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file datapath_impl_utilization_synth.rpt -pb datapath_impl_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May  5 20:38:39 2025...

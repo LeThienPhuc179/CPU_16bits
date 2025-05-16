@@ -1,0 +1,344 @@
+00
+00 //nop
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+31
+11 //addi r1,r1,1
+60
+00
+32
+23 //addi r2,r1,5
+01
+20 //add r1,r2
+00
+00
+01
+20 //add r1,r2
+29
+90
+29
+10 //sw
+01
+20 //add r1,r2
+18
+10 //lw
+01
+20 //add r1,r2
+01
+22 //sll r1,r2
+01
+23 //and r1,r2
+48
+86
+00
+00
+00
+00
+00
+00
+51
+22
+00
+00
+60
+24
+00
+00
+00
+00
+00
+00
+00
+00
+AA
+AA
+BB
+BB
+CC
+CC
+DE
+AD
+BE
+EF
+00
+00
+00
+00
+00
+00
+00
+00
+00
+00
+AA
+AA
+BB
+BB
+CC
+CC
+DE
+AD
+BE
+EF
+00
+00
+00
+00
+00
+00
+00
+00
+00
+00
+AA
+AA
+BB
+BB
+CC
+CC
+DE
+AD
+BE
+EF
+00
+00
+00
+00
+00
+00
+00
+00
+00
+00
+AA
+AA
+BB
+BB
+CC
+CC
+DE
+AD
+BE
+EF
+00
+00
+00
+00
+00
+00
+00
+00
+00
+00
+AA
+AA
+BB
+BB
+CC
+CC
+DE
+AD
+BE
+EF
+00
+00
+00
+00
+00
+00
+00
+00
+00
+00
+AA
+AA
+BB
+BB
+CC
+CC
+DE
+AD
+BE
+EF
+00
+00
+00
+00
+00
+00
+00
+00
+00
+00
+AA
+AA
+BB
+BB
+CC
+CC
+DE
+AD
+BE
+EF
+00
+00
+00
+00
+00
+00
+00
+00
+00
+00
+AA
+AA
+BB
+BB
+CC
+CC
+DE
+AD
+BE
+EF
+00
+00
+00
+00
+00
+00
+00
+00
+00
+00
+AA
+AA
+BB
+BB
+CC
+CC
+DE
+AD
+BE
+EF
+00
+00
+00
+00
+00
+00
+00
+00
+00
+00
+AA
+AA
+BB
+BB
+CC
+CC
+DE
+AD
+BE
+EF
+00
+00
+00
+00
+00
+00
+00
+00
+00
+00
+AA
+AA
+BB
+BB
+CC
+CC
+DE
+AD
+BE
+EF
+00
+00
+00
+00
+00
+00
+00
+00
+00
+00
+AA
+AA
+BB
+BB
+CC
+CC
+DE
+AD
+BE
+EF
+00
+00
+00
+00
